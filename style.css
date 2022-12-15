@@ -1,0 +1,152 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --tertiary-color: #07eaff;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header + Nav Style Start */
+header {
+    background-color: var(--primary-color);
+    padding: 10px 30px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: var(--secondary-color);
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+header nav {
+    margin: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+header nav ul li a {
+    padding: 10px 5px;
+    margin: 0 25px;
+    font-weight: lighter;
+}
+
+header nav ul li a:hover {
+    border-bottom: 2px solid var(--tertiary-color);
+}
+/* Header + Nav End */
+
+
+/* Sections Style Start */
+.sections {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    margin: 30px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sections h2 {
+    font-size: 25px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex: 15%;
+    justify-content: center;
+}
+
+.section-content {
+    flex: 80%;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+/* Sections Style End */
+
+
+/* About Me Style Start */
+.about-me {
+    display: flex;
+    align-items: center;
+}
+
+.about-me p {
+    font-size: 17px;
+    float: right;
+    margin: 40px 50px;
+    text-align: left;
+    line-height: 1.5;
+}
+/* About Me Style End */
+
+
+/* Wrapper Start */
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px yellow solid;
+}
+/* Wrapper End */
+
+
+/* Contact Style Start */
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100%;
+}
+
+.contact-details ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    line-height: 30px;
+
+}
+
+.contact-details ul li a {
+    color: var(--secondary-color);
+    padding: 8px;
+    margin: 0 auto;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.contact-details ul li a:hover {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+    border-radius: 25px;
+}
+/* Contact Style End */
