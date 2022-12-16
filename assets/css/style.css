@@ -81,6 +81,7 @@ header nav ul li a:hover {
     display: flex;
     flex: 15%;
     justify-content: center;
+    border-bottom: white 5px solid;
 }
 
 .section-content {
@@ -120,7 +121,7 @@ header nav ul li a:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* border: 2px yellow solid; */
+    border: 2px yellow solid;
     /* justify-content: center; */
     justify-content: space-around;
     padding: 20px;
