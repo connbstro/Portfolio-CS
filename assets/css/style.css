@@ -58,7 +58,6 @@ header nav ul li a {
 header nav ul li a:hover {
     border-bottom: 2px solid var(--tertiary-color);
 }
-
 /* Header + Nav End */
 
 
@@ -112,7 +111,6 @@ header nav ul li a:hover {
     line-height: 1.5;
     width: 70%;
 }
-
 /* About Me Style End */
 
 
@@ -121,7 +119,7 @@ header nav ul li a:hover {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 2px yellow solid;
+    /* border: 2px yellow solid; */
     /* justify-content: center; */
     justify-content: space-around;
     padding: 20px;
@@ -130,14 +128,12 @@ header nav ul li a:hover {
 .container {
     border: 3px rgb(255, 255, 255) solid;
     margin: 10px 0;
-    width: 50%;
+    width: 48%;
 }
 
 .container img {
     display: flex;
     flex-wrap: wrap;
-    /* max-width: 400px; */
-    margin: 2px;
     width: 100%;
     opacity: 80%;
     filter: grayscale(100%);
@@ -151,9 +147,18 @@ header nav ul li a:hover {
 .main {
     width: 100%;
     position: relative;
+    border: 3px rgb(255, 255, 255) solid;
 }
 
 .main img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.secondary {
+    justify-content: space-between;
+    /* border: pink 5px solid; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -178,7 +183,6 @@ header nav ul li a:hover {
 .title span {
     font-size: px;
 }
-
 /* Work End */
 
 
@@ -215,10 +219,10 @@ header nav ul li a:hover {
     color: var(--primary-color);
     border-radius: 25px;
 }
-
 /* Contact Style End */
 
 
+/* Media Queries Start */
 @media screen and (max-width: 575px) {
     .section-content {
         flex-direction: column;
@@ -238,3 +242,4 @@ header nav ul li a:hover {
         width: 100%;
     }
 }
+/* Media Queres End */
