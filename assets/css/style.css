@@ -129,6 +129,7 @@ header nav ul li a:hover {
     border: 3px rgb(255, 255, 255) solid;
     margin: 10px 0;
     width: 48%;
+    position: relative;
 }
 
 .container img {
@@ -181,7 +182,7 @@ header nav ul li a:hover {
 }
 
 .title span {
-    font-size: px;
+    font-size: 15px;
 }
 /* Work End */
 
@@ -240,6 +241,18 @@ header nav ul li a:hover {
     .about-me p {
         text-align: center;
         width: 100%;
+    }
+
+    .title {
+        padding: 3px 2px;
+    }
+
+    .title p {
+        font-size: 16px;
+    }
+
+    .title span {
+        font-size: 12px;
     }
 }
 /* Media Queres End */
