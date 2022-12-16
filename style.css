@@ -2,7 +2,7 @@
     --primary-color: #000000;
     --secondary-color: #ffffff;
     --tertiary-color: #07eaff;
-  }
+}
 
 * {
     margin: 0;
@@ -10,6 +10,9 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
 
 /* Header + Nav Style Start */
 header {
@@ -55,6 +58,7 @@ header nav ul li a {
 header nav ul li a:hover {
     border-bottom: 2px solid var(--tertiary-color);
 }
+
 /* Header + Nav End */
 
 
@@ -85,7 +89,6 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 /* Sections Style End */
 
@@ -96,24 +99,86 @@ header nav ul li a:hover {
     align-items: center;
 }
 
+.about-me img {
+    width: 25%;
+}
+
 .about-me p {
     font-size: 17px;
     float: right;
     margin: 40px 50px;
     text-align: left;
     line-height: 1.5;
+    width: 70%;
 }
+
 /* About Me Style End */
 
 
-/* Wrapper Start */
+/* Work Start */
 .wrapper {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    border: 2px yellow solid;
+    /* border: 2px yellow solid; */
+    /* justify-content: center; */
+    justify-content: space-around;
+    padding: 20px;
 }
-/* Wrapper End */
+
+.container {
+    border: 3px rgb(255, 255, 255) solid;
+    margin: 10px 0;
+    width: 50%;
+}
+
+.container img {
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 400px; */
+    margin: 2px;
+    width: 100%;
+    opacity: 80%;
+    filter: grayscale(100%);
+}
+
+.section-content img:hover {
+    filter: none;
+    opacity: 100%;
+  }
+
+.main {
+    width: 100%;
+    position: relative;
+}
+
+.main img {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    position: absolute;
+    bottom: 25px;
+    border: black 2px solid;
+}
+
+.title p {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.title span {
+    font-size: px;
+}
+
+/* Work End */
 
 
 /* Contact Style Start */
@@ -149,4 +214,26 @@ header nav ul li a:hover {
     color: var(--primary-color);
     border-radius: 25px;
 }
+
 /* Contact Style End */
+
+
+@media screen and (max-width: 575px) {
+    .section-content {
+        flex-direction: column;
+        line-height: 1.3;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me img {
+        width: 50%;
+    }
+
+    .about-me p {
+        text-align: center;
+        width: 100%;
+    }
+}
